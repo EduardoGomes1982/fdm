@@ -10,11 +10,9 @@ Inicio
    se (x < 0) ou (x > 15) entao
       escreval("Valor Fora da Margem Tolerada!")
    senao
-      se x > 1 entao
-         para i de x ate 2 passo -1 faca
+      para i de 1 ate x faca
             f <- f * i
-         fimpara
-      fimse
+      fimpara
       
       escreval("Fatorial = ", f)
    fimse
