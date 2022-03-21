@@ -32,7 +32,8 @@ Inicio
    somaAprov <- 0
    qAprov <- 0
    mMedia <- 0
-
+   porcAprov <- 0
+   
    para i de 0 ate x - 1 faca
       se media[i] >= 70 entao
          escreval(nome[i])
@@ -51,7 +52,10 @@ Inicio
       mediaAprov <- somaAprov / qAprov
    fimse
 
-   porcAprov <- qAprov / x * 100
+   se x > 0 entao
+      porcAprov <- qAprov / x * 100
+   fimse
+
    escreval
    escreval("Porcentagem de Aprovação: ", porcAprov:3:2, "%")
    escreval("Maior Média: ", nome[iMaiorMed])
